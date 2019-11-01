@@ -4,5 +4,5 @@ The previous version is CM_Hard.py. New version includes:
   one new level/room,
   one new enemy type (green virus),
   and a redesign of first phase of the boss.
-  
+  If you want to experience the previous version of the boss level then run CM_Boss.py.
 Enjoy :)
