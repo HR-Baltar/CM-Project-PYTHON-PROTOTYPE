@@ -6,8 +6,7 @@ from random import randint
 #arrows to move (diagonal movement is allowed)
 #you do not have to kill every enemy in the room
 
-#known bugs##
-##do NOT hold space when tranversig between room doors/passages
+
 
 class projectile(object):
     def __init__ (self, user, radius, aim):
