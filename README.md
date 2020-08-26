@@ -1,7 +1,7 @@
 # CMdemo
-CM_3.3.py is the latest version of the game.
+CM_3.3NoMusic.py is the latest version of the game.
 
-Music and sound file have been removed for ease of download. 
+Music and sound files have been removed for ease of download for said filename above. 
 
 Built in Python 3 and request pygame moduel.  
 
