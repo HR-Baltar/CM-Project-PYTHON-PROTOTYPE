@@ -1,10 +1,10 @@
 # CMdemo
-CM_3.1.py is the latest version of the game. You must download all the .mp3 and .wav files in order for the code to run properly. 
-The previous version is CM_Hard.py. New version includes:
-  one new level/room,
-  one new enemy type (green virus),
-  and a redesign of first phase of the boss.
-  If you want to skip to the boss level then run CM_Boss.py. 
-  If an error occurs while running the game, please just run it again or download CM_Boss.py to skip ahead. 
-  CM_3.1 will not be the final version as there will be new updates and implementaions coming soon. 
+CM_3.3.py is the latest version of the game.
+
+Music and sound file have been removed for ease of download. 
+
+Built in Python 3 and request pygame moduel.  
+
+'pip install pygame' in command prompt if you do not have said module
+
 Enjoy :)
