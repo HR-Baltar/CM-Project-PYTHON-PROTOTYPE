@@ -758,7 +758,9 @@ def main():
 
     pygame.display.set_caption("jCovid's Maze")
     clock = pygame.time.Clock()
-  
+    music = pygame.mixer.music.load('CT.mp3')
+    pygame.mixer.music.play(-1)
+    hitSound = pygame.mixer.Sound('hit.wav')
 
 
     # global stuff
@@ -915,14 +917,15 @@ def main():
                 roomNow = rooms[roomIndex] 
                 bot.rect.x = 800
         if roomIndex == 5: ### peace room
-
+            pygame.mixer.music.pause()
             checkpoint = [400, 300]
             roomCheck = 5
             if bot.rect.x > 805:
                 roomIndex = 4      
                 roomNow = rooms[roomIndex] 
                 bot.rect.x = -4   
-
+                music = pygame.mixer.music.load('CTboss.mp3')
+                pygame.mixer.music.play(-1)
             if bot.rect.y < -5:
                 roomIndex = 6
                 roomNow = rooms[roomIndex] 
@@ -931,7 +934,8 @@ def main():
 
             if bot.rect.bottom < 580:
                 if roomNow.bossBattle:
-
+                    music = pygame.mixer.music.load('CTboss.mp3')
+                    pygame.mixer.music.play(-1)
                     win.fill(black)
                     font1 = pygame.font.SysFont('conicsans', 100)
                     text = font1.render('Boss Battle', 1, (250, 0, 0))
@@ -979,7 +983,7 @@ def main():
                         if bullets.y + bullets.radius >= enemy.rect.y and bullets.y - bullets.radius <= enemy.rect.y + enemy.height:
                             ammo.pop(ammo.index(bullets)) 
                             enemy.hit(bot.dps)
-                           
+                            hitSound.play()
                             break
 
         
@@ -1132,7 +1136,8 @@ def main():
                     reset(rooms)
                     roomIndex = 0
                     roomNow = rooms[roomIndex]
- 
+                    music = pygame.mixer.music.load('CT.mp3')
+                    pygame.mixer.music.play(-1)
 
 
         # player status display
